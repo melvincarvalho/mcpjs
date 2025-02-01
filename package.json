@@ -1,0 +1,15 @@
+{
+  "name": "mcpjs",
+  "version": "0.0.1",
+  "description": "mcp js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Melvin Carvalho",
+  "license": "MIT",
+  "dependencies": {
+    "net": "^1.0.2"
+  }
+}
