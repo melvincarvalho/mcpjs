@@ -1,5 +1,7 @@
 # MCP JSON-RPC Client and Server Example
 
+[![smithery badge](https://smithery.ai/badge/@melvincarvalho/mcpjs)](https://smithery.ai/server/@melvincarvalho/mcpjs)
+
 This repository contains a simple, beginner-friendly example of an MCP-inspired JSON‑RPC client and server implemented in JavaScript. The project demonstrates a basic communication flow using Node.js's built‑in modules without any external dependencies.
 
 ## Overview
@@ -21,6 +23,15 @@ This repository contains a simple, beginner-friendly example of an MCP-inspired 
 
 ## Getting Started
 
+### Installing via Smithery
+
+To install MCP JSON-RPC Client and Server Example for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@melvincarvalho/mcpjs):
+
+```bash
+npx -y @smithery/cli install @melvincarvalho/mcpjs --client claude
+```
+
+### Manual Installation
 1. **Clone the Repository:**
 
    ```bash
@@ -84,5 +95,4 @@ Feel free to open issues or submit pull requests with improvements or suggestion
 ---
 
 Happy coding!
-
 
