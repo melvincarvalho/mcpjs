@@ -2,13 +2,15 @@
 const net = require('net');
 
 // Helper function to create a JSON-RPC request with a newline
-function createRequest(id, method, params) {
-  return JSON.stringify({
+function createRequest (id, method, params) {
+  const request = JSON.stringify({
     jsonrpc: "2.0",
     id: id,
     method: method,
     params: params
   }) + "\n";
+  console.log("Sending request:", JSON.stringify(JSON.parse(request), null, 2));
+  return request;
 }
 
 const client = new net.Socket();
@@ -34,7 +36,7 @@ client.on('data', (data) => {
     if (!line) return;
     try {
       const message = JSON.parse(line);
-      console.log("Received response:", message);
+      console.log("Received response:", JSON.stringify(message, null, 2));
     } catch (err) {
       console.error("Error parsing response:", err);
     }
